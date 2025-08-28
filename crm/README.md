@@ -1,12 +1,29 @@
-# CRM Celery Setup
+# CRM Project – Task Scheduling & Automation
 
-## Requirements
-- Redis
-- Celery
-- django-celery-beat
+This project demonstrates how to use **cron jobs**, **django-crontab**, and **Celery with django-celery-beat** in a Django + GraphQL CRM system.
 
-## Setup
+---
+
+## 📌 Requirements
+
+- Python 3.x
+- Django
+- GraphQL (graphene-django)
+- Redis (for Celery)
+- Packages in `requirements.txt`:
+  - django-crontab
+  - celery
+  - django-celery-beat
+
+---
+
+## 🚀 Setup
+
+### 1. Clone Repository
 ```bash
-sudo apt install redis-server
+git clone https://github.com/<your-username>/alx-backend-graphql_crm.git
+cd alx-backend-graphql_crm
+
 pip install -r requirements.txt
 python manage.py migrate
+python manage.py runserver

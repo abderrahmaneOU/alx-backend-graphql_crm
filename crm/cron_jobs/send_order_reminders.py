@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import requests
+from gql import gql, Client
 from datetime import datetime, timedelta
 
 LOG_FILE = "/tmp/order_reminders_log.txt"
